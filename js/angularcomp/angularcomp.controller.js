@@ -1,10 +1,10 @@
 `use strict`;
 
 (function(){
-  var app = angular.module("emergencyComp");
-  app.controller("emergencyCompController", emergencyCompController);
+  var app = angular.module("angularComp");
+  app.controller("mainController", ComplimentsController);
 
-  function emergencyCompController(){
+  function ComplimentsController(){
     var vm = this;
     var randomIndex = Math.floor(Math.random() * data.length)
     vm.data = data[randomIndex];
